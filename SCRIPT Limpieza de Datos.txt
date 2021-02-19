@@ -1,0 +1,4 @@
+select count(*) from hurtos_nacional; conteo de datos de la tabla de registros nacionales la cual tiene 1558752 datos
+select count(*) from hurtos_nacional where municipio='PASTO (CT)'; consulta el la tabla hurtos_nacional los registros de la ciudad de pasto el resultado arroja 30409 datos
+copy(select * from hurtos_nacional where municipio='PASTO (CT)') TO 'C:\Windows\Temp\hurtos.csv' with CSV HEADER DELIMITER ';'; se genera un nuevo archivo aplicando el filtro de busqueda
+select count(*) from hurtos; consulta de cantidad de datos al nuevo archivo, lo cual arroja la cantidad de 30409 datos
